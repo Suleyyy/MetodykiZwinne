@@ -3,3 +3,17 @@ MyWidget:
 <MyWidget>:
     Button:
         text: "XD"
+        size: "100dp", "100dp"
+        pos: "100dp", "100dp"
+        background_color: 1, 0, 0, 0.5
+    Label:
+        text: "Hello, world!"
+        font_size: "24sp"
+        pos: "100dp", "400dp"
+        canvas.before:
+            Color:
+                rgba: 1, 0, 0, 1  # Border color
+            Line:
+                width: 2  # Border width
+                rectangle: (self.x, self.y, self.width, self.height)
+
